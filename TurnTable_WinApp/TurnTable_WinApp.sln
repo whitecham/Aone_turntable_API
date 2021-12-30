@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurnTable_APP", "TurnTable_APP\TurnTable_APP.csproj", "{DCF67C44-A63C-4B1C-82F9-A700C76DD49E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurnTable_WinApp", "TurnTable_WinApp\TurnTable_WinApp.csproj", "{E3F9FD66-627F-4405-872A-DB833F85BD8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DCF67C44-A63C-4B1C-82F9-A700C76DD49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCF67C44-A63C-4B1C-82F9-A700C76DD49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCF67C44-A63C-4B1C-82F9-A700C76DD49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCF67C44-A63C-4B1C-82F9-A700C76DD49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F9FD66-627F-4405-872A-DB833F85BD8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F9FD66-627F-4405-872A-DB833F85BD8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F9FD66-627F-4405-872A-DB833F85BD8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F9FD66-627F-4405-872A-DB833F85BD8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {47869547-2DF1-4A6D-B0F7-596B7C9776B4}
+		SolutionGuid = {FFF7A9CD-0541-4201-9429-57051C0D4E29}
 	EndGlobalSection
 EndGlobal

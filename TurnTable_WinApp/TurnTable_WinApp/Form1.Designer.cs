@@ -28,43 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.connect_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.logClear_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.ipTextBox2 = new System.Windows.Forms.TextBox();
+            this.ipTextBox3 = new System.Windows.Forms.TextBox();
+            this.ipTextBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.LogBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.portTextBox = new System.Windows.Forms.TextBox();
+            this.degree_btn = new System.Windows.Forms.Button();
+            this.repeatTextBox_lower = new System.Windows.Forms.TextBox();
+            this.degreeTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.cw_inf_btn = new System.Windows.Forms.Button();
+            this.ccw_inf_btn = new System.Windows.Forms.Button();
+            this.cw_ccw_inf_btn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.repeatTextBox_upper = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.repeat_btn = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.speedTextBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.speed_btn = new System.Windows.Forms.Button();
+            this.ipTextBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // connect_btn
             // 
-            this.button1.Location = new System.Drawing.Point(689, 127);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Connect";
-            this.button1.UseVisualStyleBackColor = true;
+            this.connect_btn.Location = new System.Drawing.Point(689, 127);
+            this.connect_btn.Name = "connect_btn";
+            this.connect_btn.Size = new System.Drawing.Size(78, 37);
+            this.connect_btn.TabIndex = 0;
+            this.connect_btn.Text = "Connect";
+            this.connect_btn.UseVisualStyleBackColor = true;
+            this.connect_btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -76,14 +81,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = ".";
             // 
-            // button2
+            // logClear_btn
             // 
-            this.button2.Location = new System.Drawing.Point(331, 387);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 37);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
+            this.logClear_btn.Location = new System.Drawing.Point(331, 387);
+            this.logClear_btn.Name = "logClear_btn";
+            this.logClear_btn.Size = new System.Drawing.Size(78, 37);
+            this.logClear_btn.TabIndex = 2;
+            this.logClear_btn.Text = "Clear";
+            this.logClear_btn.UseVisualStyleBackColor = true;
+            this.logClear_btn.Click += new System.EventHandler(this.logClear_btn_Click);
             // 
             // label2
             // 
@@ -105,33 +111,26 @@
             this.label3.TabIndex = 4;
             this.label3.Text = ".";
             // 
-            // textBox1
+            // ipTextBox2
             // 
-            this.textBox1.Location = new System.Drawing.Point(485, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(56, 21);
-            this.textBox1.TabIndex = 5;
+            this.ipTextBox2.Location = new System.Drawing.Point(562, 56);
+            this.ipTextBox2.Name = "ipTextBox2";
+            this.ipTextBox2.Size = new System.Drawing.Size(56, 21);
+            this.ipTextBox2.TabIndex = 6;
             // 
-            // textBox2
+            // ipTextBox3
             // 
-            this.textBox2.Location = new System.Drawing.Point(562, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(56, 21);
-            this.textBox2.TabIndex = 6;
+            this.ipTextBox3.Location = new System.Drawing.Point(634, 56);
+            this.ipTextBox3.Name = "ipTextBox3";
+            this.ipTextBox3.Size = new System.Drawing.Size(56, 21);
+            this.ipTextBox3.TabIndex = 7;
             // 
-            // textBox3
+            // ipTextBox4
             // 
-            this.textBox3.Location = new System.Drawing.Point(634, 56);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(56, 21);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(711, 56);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(56, 21);
-            this.textBox4.TabIndex = 8;
+            this.ipTextBox4.Location = new System.Drawing.Point(711, 56);
+            this.ipTextBox4.Name = "ipTextBox4";
+            this.ipTextBox4.Size = new System.Drawing.Size(56, 21);
+            this.ipTextBox4.TabIndex = 8;
             // 
             // label4
             // 
@@ -142,22 +141,22 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "IP :";
             // 
-            // textBox5
+            // LogBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 56);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(397, 314);
-            this.textBox5.TabIndex = 10;
+            this.LogBox.Location = new System.Drawing.Point(12, 56);
+            this.LogBox.Multiline = true;
+            this.LogBox.Name = "LogBox";
+            this.LogBox.Size = new System.Drawing.Size(397, 314);
+            this.LogBox.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 36);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 12);
+            this.label5.Size = new System.Drawing.Size(33, 12);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Status";
+            this.label5.Text = "Logs";
             // 
             // label6
             // 
@@ -168,35 +167,36 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "PORT :";
             // 
-            // textBox6
+            // portTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(485, 100);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(56, 21);
-            this.textBox6.TabIndex = 13;
+            this.portTextBox.Location = new System.Drawing.Point(485, 100);
+            this.portTextBox.Name = "portTextBox";
+            this.portTextBox.Size = new System.Drawing.Size(56, 21);
+            this.portTextBox.TabIndex = 13;
             // 
-            // button3
+            // degree_btn
             // 
-            this.button3.Location = new System.Drawing.Point(685, 223);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 21);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Set";
-            this.button3.UseVisualStyleBackColor = true;
+            this.degree_btn.Location = new System.Drawing.Point(685, 223);
+            this.degree_btn.Name = "degree_btn";
+            this.degree_btn.Size = new System.Drawing.Size(82, 21);
+            this.degree_btn.TabIndex = 14;
+            this.degree_btn.Text = "Set";
+            this.degree_btn.UseVisualStyleBackColor = true;
+            this.degree_btn.Click += new System.EventHandler(this.degree_btn_Click);
             // 
-            // textBox7
+            // repeatTextBox_lower
             // 
-            this.textBox7.Location = new System.Drawing.Point(485, 269);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(48, 21);
-            this.textBox7.TabIndex = 15;
+            this.repeatTextBox_lower.Location = new System.Drawing.Point(485, 269);
+            this.repeatTextBox_lower.Name = "repeatTextBox_lower";
+            this.repeatTextBox_lower.Size = new System.Drawing.Size(48, 21);
+            this.repeatTextBox_lower.TabIndex = 15;
             // 
-            // textBox8
+            // degreeTextBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(573, 227);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(48, 21);
-            this.textBox8.TabIndex = 16;
+            this.degreeTextBox.Location = new System.Drawing.Point(573, 227);
+            this.degreeTextBox.Name = "degreeTextBox";
+            this.degreeTextBox.Size = new System.Drawing.Size(48, 21);
+            this.degreeTextBox.TabIndex = 16;
             // 
             // label7
             // 
@@ -207,37 +207,37 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Deg. :";
             // 
-            // button4
+            // cw_inf_btn
             // 
-            this.button4.Location = new System.Drawing.Point(462, 337);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 33);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "+ inf.";
-            this.button4.UseVisualStyleBackColor = true;
+            this.cw_inf_btn.Location = new System.Drawing.Point(462, 387);
+            this.cw_inf_btn.Name = "cw_inf_btn";
+            this.cw_inf_btn.Size = new System.Drawing.Size(82, 33);
+            this.cw_inf_btn.TabIndex = 18;
+            this.cw_inf_btn.Text = "+ inf.";
+            this.cw_inf_btn.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // ccw_inf_btn
             // 
-            this.button5.Location = new System.Drawing.Point(688, 337);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(82, 33);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "- inf.";
-            this.button5.UseVisualStyleBackColor = true;
+            this.ccw_inf_btn.Location = new System.Drawing.Point(688, 387);
+            this.ccw_inf_btn.Name = "ccw_inf_btn";
+            this.ccw_inf_btn.Size = new System.Drawing.Size(82, 33);
+            this.ccw_inf_btn.TabIndex = 19;
+            this.ccw_inf_btn.Text = "- inf.";
+            this.ccw_inf_btn.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // cw_ccw_inf_btn
             // 
-            this.button6.Location = new System.Drawing.Point(577, 337);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(82, 33);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "+ - inf.";
-            this.button6.UseVisualStyleBackColor = true;
+            this.cw_ccw_inf_btn.Location = new System.Drawing.Point(577, 387);
+            this.cw_ccw_inf_btn.Name = "cw_ccw_inf_btn";
+            this.cw_ccw_inf_btn.Size = new System.Drawing.Size(82, 33);
+            this.cw_ccw_inf_btn.TabIndex = 20;
+            this.cw_ccw_inf_btn.Text = "+ - inf.";
+            this.cw_ccw_inf_btn.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(543, 251);
+            this.label8.Location = new System.Drawing.Point(547, 251);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 12);
             this.label8.TabIndex = 21;
@@ -252,12 +252,12 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Repeat :";
             // 
-            // textBox9
+            // repeatTextBox_upper
             // 
-            this.textBox9.Location = new System.Drawing.Point(573, 269);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(48, 21);
-            this.textBox9.TabIndex = 23;
+            this.repeatTextBox_upper.Location = new System.Drawing.Point(573, 269);
+            this.repeatTextBox_upper.Name = "repeatTextBox_upper";
+            this.repeatTextBox_upper.Size = new System.Drawing.Size(48, 21);
+            this.repeatTextBox_upper.TabIndex = 23;
             // 
             // label10
             // 
@@ -268,59 +268,106 @@
             this.label10.TabIndex = 24;
             this.label10.Text = "~";
             // 
-            // button7
+            // repeat_btn
             // 
-            this.button7.Location = new System.Drawing.Point(688, 268);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(82, 21);
-            this.button7.TabIndex = 25;
-            this.button7.Text = "Set";
-            this.button7.UseVisualStyleBackColor = true;
+            this.repeat_btn.Location = new System.Drawing.Point(688, 268);
+            this.repeat_btn.Name = "repeat_btn";
+            this.repeat_btn.Size = new System.Drawing.Size(82, 21);
+            this.repeat_btn.TabIndex = 25;
+            this.repeat_btn.Text = "Set";
+            this.repeat_btn.UseVisualStyleBackColor = true;
+            this.repeat_btn.Click += new System.EventHandler(this.repeat_btn_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(540, 293);
+            this.label11.Location = new System.Drawing.Point(547, 293);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 12);
             this.label11.TabIndex = 26;
             this.label11.Text = "(-360 ~ 360 )";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(424, 318);
+            this.label12.Name = "label12";
+            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label12.Size = new System.Drawing.Size(49, 12);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "Speed :";
+            // 
+            // speedTextBox
+            // 
+            this.speedTextBox.Location = new System.Drawing.Point(573, 315);
+            this.speedTextBox.Name = "speedTextBox";
+            this.speedTextBox.Size = new System.Drawing.Size(48, 21);
+            this.speedTextBox.TabIndex = 28;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(571, 339);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(54, 12);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "(1 ~ 10 )";
+            // 
+            // speed_btn
+            // 
+            this.speed_btn.Location = new System.Drawing.Point(685, 315);
+            this.speed_btn.Name = "speed_btn";
+            this.speed_btn.Size = new System.Drawing.Size(82, 21);
+            this.speed_btn.TabIndex = 30;
+            this.speed_btn.Text = "Set";
+            this.speed_btn.UseVisualStyleBackColor = true;
+            this.speed_btn.Click += new System.EventHandler(this.speed_btn_Click);
+            // 
+            // ipTextBox1
+            // 
+            this.ipTextBox1.Location = new System.Drawing.Point(485, 56);
+            this.ipTextBox1.Name = "ipTextBox1";
+            this.ipTextBox1.Size = new System.Drawing.Size(56, 21);
+            this.ipTextBox1.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.speed_btn);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.speedTextBox);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.repeat_btn);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.repeatTextBox_upper);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.cw_ccw_inf_btn);
+            this.Controls.Add(this.ccw_inf_btn);
+            this.Controls.Add(this.cw_inf_btn);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.degreeTextBox);
+            this.Controls.Add(this.repeatTextBox_lower);
+            this.Controls.Add(this.degree_btn);
+            this.Controls.Add(this.portTextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.LogBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ipTextBox4);
+            this.Controls.Add(this.ipTextBox3);
+            this.Controls.Add(this.ipTextBox2);
+            this.Controls.Add(this.ipTextBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.logClear_btn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.connect_btn);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "TurnTable2D_WinApp";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,33 +375,37 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button connect_btn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button logClear_btn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox ipTextBox2;
+        private System.Windows.Forms.TextBox ipTextBox3;
+        private System.Windows.Forms.TextBox ipTextBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox LogBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox portTextBox;
+        private System.Windows.Forms.Button degree_btn;
+        private System.Windows.Forms.TextBox repeatTextBox_lower;
+        private System.Windows.Forms.TextBox degreeTextBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button cw_inf_btn;
+        private System.Windows.Forms.Button ccw_inf_btn;
+        private System.Windows.Forms.Button cw_ccw_inf_btn;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox repeatTextBox_upper;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button repeat_btn;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox speedTextBox;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button speed_btn;
+        private System.Windows.Forms.TextBox ipTextBox1;
     }
 }
 

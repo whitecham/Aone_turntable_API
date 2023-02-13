@@ -8,3 +8,14 @@ C:\Users\simon\Desktop\aone\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_Win
 C:\Users\simon\Desktop\aone\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.csproj.CoreCompileInputs.cache
 C:\Users\simon\Desktop\aone\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.exe
 C:\Users\simon\Desktop\aone\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.pdb
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.csproj.AssemblyReference.cache
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.Form1.resources
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.Properties.Resources.resources
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.csproj.GenerateResource.cache
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.csproj.CoreCompileInputs.cache
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.exe
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\obj\Debug\TurnTable_WinApp.pdb
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\bin\Debug\TurnTable_WinApp.exe.config
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\bin\Debug\TurnTable_WinApp.exe
+C:\Users\simon\Desktop\Github\Aone_turntable_winAPP\TurnTable_WinApp\TurnTable_WinApp\bin\Debug\TurnTable_WinApp.pdb

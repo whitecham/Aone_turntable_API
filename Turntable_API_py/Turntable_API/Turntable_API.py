@@ -1,4 +1,5 @@
 
+from pickle import TRUE
 import sys
 import requests ,json
 
@@ -53,10 +54,28 @@ def cmd_help_non_while():
     print("    ex : t2d 192.168.0.10 9138 n deg_spd 1")
     print(" : deg_apply")
     print("    ex : t2d 192.168.0.10 9138 n deg_apply")
+    print()
+    print(" : info_dir")
+    print("    - show that current direction ")
+    print(" : info_cur_deg")
+    print("    - show that current degree ")
+    print(" : info_tar_deg")
+    print("    - show that target degree")
+    print(" : info_rpt_spd")
+    print("    - show that Repeat Setting section speed ")
+    print(" : info_spd")
+    print("    - show that Setting section speed ")
+    print(" : info_rpt")
+    print("    - show that repeat value ")
+    print(" : info_is_run")
+    print("    - show that turntable is running or not ")
+
+
 
 
 
 def cmd_interpret(cmd,extra_var):
+    # repeat
     if cmd == 'rpt':
         rep_flag = extra_var
         if(rep_flag == '1' or rep_flag == '0'):
@@ -88,7 +107,7 @@ def cmd_interpret(cmd,extra_var):
 
     elif cmd == 'rpt_apply':
         result = "set_mem(40011,1)"
-
+    # deg
     elif cmd == 'deg':
         tar_deg = extra_var
         try:
@@ -115,7 +134,21 @@ def cmd_interpret(cmd,extra_var):
             result = '0'
     elif cmd == 'deg_apply':
         result = 'set_mem(40001,1)'
-
+    # info
+    elif cmd == 'info_dir':
+        result = 'vars_to_json("direction")'
+    elif cmd == 'info_cur_deg':
+        result = 'vars_to_json("cur_deg")'
+    elif cmd == 'info_tar_deg':
+        result = 'vars_to_json("tar_deg")'
+    elif cmd == 'info_rpt_spd':
+        result = 'vars_to_json("tar_spd_rpt")'
+    elif cmd == 'info_spd':
+        result = 'vars_to_json("tar_spd")'
+    elif cmd == 'info_rpt':
+        result = 'vars_to_json("repeat")'
+    elif cmd == 'info_is_run':
+        result = 'vars_to_json("isBusy")'
     else:
         cmd_help_non_while()
         result = '0'
@@ -124,7 +157,61 @@ def cmd_interpret(cmd,extra_var):
     return result
 
 def response_interpret(txt):
-    print(txt)
+    #print(txt)
+    data = json.loads(txt)
+    http_result = data["success"]
+
+    if(http_result == True):
+        
+        #print(type(http_vars))
+        #print(http_vars)
+        try:
+            http_vars = data["vars"]
+            if(len(list(http_vars.keys())) != 0):
+                vars_str = list(http_vars.keys())
+                if(vars_str[0] == 'direction'):
+                    val = http_vars["direction"] 
+                    if(val == 0):
+                        print("0 (CW)")
+                    elif(val == 1):
+                        print("1 (CCW)")
+                    elif(val == 2):
+                        print("2 (CCW<->CW)")
+                elif(vars_str[0] == 'cur_deg'):
+                    val = float(http_vars["cur_deg"])
+                    print(str(val * 0.0144) + " deg")
+                elif(vars_str[0] == 'tar_deg'):
+                    val = http_vars["tar_deg"] 
+                    print(str(val) + " deg")
+                elif(vars_str[0] == 'tar_spd_rpt'):
+                    val = http_vars["tar_spd_rpt"] 
+                    print(val)
+                elif(vars_str[0] == 'tar_spd'):
+                    val = http_vars["tar_spd"] 
+                    print(val)
+                elif(vars_str[0] == 'repeat'):
+                    val = http_vars["repeat"] 
+                    print(val)
+                elif(vars_str[0] == 'isBusy'):
+                    val = http_vars["isBusy"] 
+                    if(val == 0):
+                        print('0 (ready)')
+                    elif(val == 1):
+                        print('1 (running)')
+        except:
+            print("ok")
+
+    elif(http_result == False):
+        try:
+            http_error = data["error"]
+            http_error_code = http_error["code"]
+            if(http_error_code == '3012'):
+                print("Incorrect password")
+            elif(http_error_code == '4011'):
+                print("Unknown command")
+        except:
+            print("fail")
+    
     return
 
 def main2():
@@ -170,7 +257,10 @@ def main():
     try:
         ex_val = sys.argv[5]
     except:
-        if(CMD == 'rpt_apply' or CMD == 'deg_apply'):
+        if(CMD == 'rpt_apply' or CMD == 'deg_apply' or 
+           CMD == 'info_dir' or CMD == 'info_cur_deg' or
+           CMD == 'info_tar_deg' or CMD == 'info_rpt_spd' or
+           CMD == 'info_spd' or CMD == 'info_rpt' or CMD =='info_is_run'):
             ex_val = ''
         else:
             cmd_help_non_while()

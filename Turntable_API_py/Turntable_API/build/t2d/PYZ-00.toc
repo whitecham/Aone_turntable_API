@@ -1,4 +1,4 @@
-('C:\\Users\\jun\\Desktop\\GIT\\Turntable_API\\Turntable_API\\build\\t2d\\PYZ-00.pyz',
+('C:\\Users\\jun\\Desktop\\GIT\\Aone_turntable_API\\Turntable_API_py\\Turntable_API\\build\\t2d\\PYZ-00.pyz',
  [('__future__',
    'C:\\Program Files\\Python310\\lib\\__future__.py',
    'PYMODULE'),

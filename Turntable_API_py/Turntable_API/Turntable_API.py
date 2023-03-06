@@ -106,7 +106,7 @@ def cmd_interpret(cmd,extra_var):
             result = '0'
 
     elif cmd == 'rpt_apply':
-        result = "set_mem(40011,1)"
+        result = "rpt_apply=1"
     # deg
     elif cmd == 'deg':
         tar_deg = extra_var
@@ -133,7 +133,7 @@ def cmd_interpret(cmd,extra_var):
             print("deg_spd value should be 1 ~ 10")
             result = '0'
     elif cmd == 'deg_apply':
-        result = 'set_mem(40001,1)'
+        result = 'deg_apply=1'
     # info
     elif cmd == 'info_dir':
         result = 'vars_to_json("direction")'
@@ -219,7 +219,7 @@ def main2():
     prefix = "http://"
 #    url = prefix+IP+":"+PORT
 #    print (url)
-    response = requests.get('http://172.30.1.20:9138/script//direction=1;repeat=1;tar_deg=259.4;set_mem(40011,1)')
+    response = requests.get('http://172.30.1.20:9138/script//direction=1;repeat=1;tar_deg=360;set_mem(40011,1)')
     print(response)
 
 
